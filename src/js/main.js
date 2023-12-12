@@ -5,6 +5,7 @@ $(function() {
             .closest('div.tabs').find('div.benefits__content').removeClass('active').eq($(this).index()).addClass('active');
     });
 });
+
 var swiper = new Swiper(".team__swiper", {
     slidesPerView: 4,
     spaceBetween: 30,
@@ -12,7 +13,7 @@ var swiper = new Swiper(".team__swiper", {
         nextEl: ".team__next",
         prevEl: ".team__prev",
     },
-    autoplay:{
+    autoplay: {
         delay: 2000
     },
     loop: true

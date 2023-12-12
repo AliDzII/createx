@@ -76,8 +76,16 @@
     }
   }
   &__end{
-    display: inline-flex;
-    align-items: center;
-    gap: 40px;
+      display: inline-flex;
+      align-items: center;
+      column-gap: 36px;
+    justify-content: space-between;
+    &-title{
+      color: var(--gray-900, #1E212C);
+      font-size: 28px;
+      font-weight: 700;
+     }
+
   }
+
 }
