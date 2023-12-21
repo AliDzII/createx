@@ -8,7 +8,7 @@
   &__left{
     width: 30%;
     &-info {
-      color: var(--white, #FFF);
+      color: #a5a6aa;
       font-size: 12px;
       font-weight: 400;
       line-height: 150%;
@@ -30,5 +30,87 @@
         }
       }
 
+  }
+  &__center{
+    display: flex;
+    column-gap: 80px;
+    &-menu{
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+    }
+    &-title{
+      color: var(--white, #FFF);
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    &-item{
+     a{
+       color: #a5a6aa;
+       font-weight: 400;
+     }
+     }
+  }
+  &__bottom{
+    padding: 19px 0;
+    background: #2a2c37;
+    &-row{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-all{
+      display: flex;
+      align-items: center;
+      color: var(--white, #FFF);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 150%; /* 18px */
+    }
+    &-go{
+      color: #a5a6aa;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 150%; /* 21px */
+    }
+  }
+  &__right{
+    &-label{
+      display: block;
+      margin: 24px 0 12px;
+      position: relative;
+    }
+    &-add{
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 12px;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    &-input{
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      background: rgba(255, 255, 255, 0.12);
+      padding: 9px 12px;
+      color: white;
+      &::placeholder{
+        color: var(--white, #FFF);
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+
+    }
+    &-desc{
+      color: var(--white, #FFF);
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 150%;
+    }
   }
 }

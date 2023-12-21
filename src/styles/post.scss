@@ -7,6 +7,8 @@
   }
   &__card{
     width: calc(33.33333% - 20px);
+    position: relative;
+    margin-top: 60px;
     &-img{
       width: 100%;
     }
@@ -14,6 +16,7 @@
       display: flex;
       align-items: center;
       column-gap: 12px;
+      margin: 16px 0 8px;
     }
     &-marketing{
       color: var(--gray-700, #787A80);
@@ -33,6 +36,7 @@
       font-size: 20px;
       font-weight: 700;
       line-height: 150%;
+      margin: 8px 0 8px;
     }
     &-desc{
       color: var(--gray-800, #424551);
@@ -45,7 +49,7 @@
       align-items: center;
       column-gap: 8px;
       color: var(--gray-900, #1E212C);
-       font-weight: 700;
+      font-weight: 700;
     }
     &-el{
       position: absolute;
@@ -59,7 +63,7 @@
       color: var(--gray-800, #424551);
       background: var(--white, #FFF);
       font-size: 14px;
-       font-weight: 400;
+      font-weight: 400;
     }
   }
 

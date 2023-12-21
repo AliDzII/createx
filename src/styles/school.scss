@@ -1,0 +1,28 @@
+.school{
+  padding: 120px;
+  background: #ffdad5;
+  &__title{
+    color: var(--gray-900, #1E212C);
+    text-align: center;
+     font-size: 46px;
+     font-weight: 900;
+    line-height: 130%; /* 59.8px */
+    margin-bottom: 60px;
+  }
+  &__suptitle{
+    color: var(--gray-900, #1E212C);
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  &__btn{
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    input{
+      padding: 13px 271px 13px 16px;
+    }
+  }
+}
+

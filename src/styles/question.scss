@@ -43,3 +43,36 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+.question {
+  padding: 80px 0;
+  }
+}
+@media (max-width: 992px){
+.question{
+  &__left{
+    display: none;
+  }
+  &__right{
+    width: 100%;
+    text-align: center;
+  }
+  &__list{
+align-items: center
+  }
+}
+}
+@media (max-width: 500px){
+.question{
+  padding: 80px 0;
+  &__list{
+    &-text{
+      text-align: start;
+    }
+  }
+}
+}
+@media (max-width: 425px) {
+
+}

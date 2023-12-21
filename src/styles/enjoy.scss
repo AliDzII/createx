@@ -1,5 +1,5 @@
 .enjoy {
-  padding: 127px 0 80px;
+  padding: 128px 0 80px;
   background: #ffdad5;
   &__row{
     display: flex;
@@ -66,5 +66,71 @@
        font-weight: 400;
       padding: 40px;
      }
+  }
+}
+
+@media (max-width: 992px) {
+  .header__links, .header__right{
+    display: none;
+  }
+  .header__burgerMenu{
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    background: #FFF;
+    padding: 20px 0;
+    top: -100%;
+    left: 0;
+    transform: translateY(-100%);
+    border-radius: 0 0 20px 20px;
+
+    &.active{
+      top: 0;
+      transform: translateY(0%);
+
+
+    }
+  }
+  .header__burger {
+    display: flex;
+  }
+}
+@media (max-width: 992px) {
+  .enjoy__left-title{
+    font-size: 50px;
+  }
+
+}
+@media (max-width: 768px){
+.enjoy__right{
+  display: none;
+}
+  .enjoy__left{
+    width: 100%;
+    text-align: center;
+    &-y{
+      justify-content: center
+    }
+    &-btns{
+      justify-content: center;
+    }
+  }
+  .enjoy__bottom{
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+    margin-top: 110px;
+    &-card{
+      width: 50%;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .enjoy{
+    padding: 60px 0 80px;
   }
 }
