@@ -16,7 +16,42 @@ var swiper = new Swiper(".team__swiper", {
     autoplay: {
         delay: 2000
     },
-    loop: true
+    loop: true,
+
+    breakpoints: {
+        886: {
+            slidesPerView: 4,
+            768: {
+                slidesPerView: 3,
+            }
+        },
+        breakpoints: {
+            678: {
+                slidesPerView: 2,
+            }
+        },
+        breakpoints: {
+            500: {
+                slidesPerView: 2,
+            }
+        },
+        breakpoints: {
+            425: {
+                slidesPerView: 1,
+            }
+        },
+        breakpoints: {
+            375: {
+                slidesPerView: 1,
+            }
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            }
+        },
+        }
+
 });
 
 let burger = document.querySelector('.header__burger')
